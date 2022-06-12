@@ -5,6 +5,7 @@ import { UilScenery } from "@iconscout/react-unicons"
 import { UilPlayCircle } from "@iconscout/react-unicons"
 import { UilLocationPoint } from "@iconscout/react-unicons"
 import { UilSchedule } from "@iconscout/react-unicons"
+import { UilTimes } from "@iconscout/react-unicons"
 
 
 const PostShare = () => {
@@ -28,7 +29,7 @@ const PostShare = () => {
             <div className="postOptions">
             <div className="option"
             style={{color:"var(--photo)"}}
-            onClick={()=>imageRefcurrent.click()}
+            onClick={()=>imageRef.current.click()}
             >
                 <UilScenery/>
                 Photo
@@ -63,7 +64,8 @@ const PostShare = () => {
             </div>
             {image && (
                     <div className="previewImage">
-
+                        <UilTimes onClick={()=>setImage(null)}/>
+                        <img src={image.image} alt="" />
                     </div>
 
             )}
