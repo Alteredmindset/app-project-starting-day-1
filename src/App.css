@@ -40,3 +40,7 @@
   background: #a6ddf0;
   filter: blur(72px);
 }
+
+::-webkit-scrollbar{
+  display: none;
+}
