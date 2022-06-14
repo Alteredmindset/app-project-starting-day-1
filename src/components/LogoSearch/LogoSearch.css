@@ -28,3 +28,9 @@
 .s-icon:hover{
     cursor: pointer;
 }
+
+.LogoSearch>img{
+    width: 60px;
+    height: 60px;
+
+}
